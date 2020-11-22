@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 int lexicographic_sort(const char* a, const char* b) {
     int res = 0;
     for(int i=0; i<strlen(a); i++){
