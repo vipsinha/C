@@ -159,12 +159,12 @@ static int SearchNeedle(int Length)
                 if(SearchNeedle[NeedleIndex] == HayStack[Index][NeedleIndex])
                 {
                     NeedleFound = 1;
-                    NeedleAdd = (int*)HayStack[Index];
+                    NeedleAdd = (int*)&HayStack[Index];
                 }
                 else
                 {
                     NeedleFound = 0;
-                    NeedleAdd = (int *)NULL_PTR;
+                    //NeedleAdd = (int *)NULL_PTR;
                     break;
                 }
             }
