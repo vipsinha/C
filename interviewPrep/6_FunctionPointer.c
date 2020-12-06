@@ -11,10 +11,12 @@ int mul(int a, int b);
 
 int main(){
 
-    int choice = 0;
-    int num1 = 0, num2 = 0;
+    // decleration
     int (*funcptr[3])(int, int) = {add, sub, mul};
 
+    int choice = 0;
+    int num1 = 0, num2 = 0;
+    
     printf("Enter the choice\n");
     printf("1-Addition\n");
     printf("2-Substraction\n");
@@ -29,6 +31,7 @@ int main(){
     printf("Enter two numbers\n");
     scanf("%d%d", &num1, &num2);
     
+    // calling
     printf("The result is = %d\n",(*funcptr[choice])(num1, num2));
 
     return 0;
